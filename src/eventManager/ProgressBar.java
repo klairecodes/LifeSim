@@ -1,4 +1,6 @@
 package eventManager;
+import human.Human;
+
 import java.util.Iterator;
 import java.util.Stack;
 
@@ -12,6 +14,10 @@ public class ProgressBar {
     public ProgressBar() {
     }
 
+    /**
+     * converts a progressbar Stack structure to a string
+     * @return
+     */
     @Override
     public String toString() {
         Iterator progressiter = progress.iterator();
@@ -43,12 +49,47 @@ public class ProgressBar {
         }
     }
 
-    public static void main(String[] args) {
-        ProgressBar PB = new ProgressBar();
+    /**
+     * adds to the progressbar
+     * @param addVal
+     */
+    public void addToBar(float addVal) {
+        int meterMax = Human.meterMax;
+        int percentAdd = (int) (addVal / meterMax);
+        int amtAdd = (int) ((addVal / meterMax) - (addVal % meterMax));
 
-        System.out.println(PB.progress);
-        PB.fullBar();
-        System.out.println(PB.progress);
-        System.out.println("Progress: [" + PB.toString() + "]");
+        System.out.println(amtAdd);
+        for (int i = 0; i < amtAdd; i++) {
+            progress.push("#");
+        }
+    }
+
+    public void subToBar(float subVal) {
+        int meterMax = Human.meterMax;
+        int percentSub = (int) (subVal / meterMax);
+
+        progress.pop();
+    }
+
+    /**
+     * checks whether a progressbar is too large or too small (negatives)
+     */
+    public void validateBar() {
+        ;
+    }
+
+    public static void main(String[] args) {
+//        ProgressBar PB = new ProgressBar();
+//
+//        System.out.println(PB.progress);
+//        PB.fullBar();
+//        System.out.println(PB.progress);
+//        System.out.println("Progress: [" + PB.toString() + "]");
+        ProgressBar testBar = new ProgressBar();
+        testBar.fullBar();
+        testBar.emptyBar();
+        testBar.addToBar(42);
+        System.out.println(testBar.toString());
     }
 }
+
