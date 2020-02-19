@@ -21,7 +21,7 @@ public class LifeSym{
 //            // outputs for visual testing
 //            System.out.println("Thirst: " + human.thirstLev);
 //            System.out.println("Hunger: " + human.hungerLev);
-            bar.addToBar((float) 42.0);
+            bar.addToBar((float) 420.0);
             System.out.println(bar.toString());
         }
     }

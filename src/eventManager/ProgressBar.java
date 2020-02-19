@@ -9,6 +9,7 @@ import java.util.Stack;
  */
 public class ProgressBar {
     Stack progress = new Stack<String>();
+    int meterMax = Human.meterMax;
 
     // constructor
     public ProgressBar() {
@@ -45,7 +46,7 @@ public class ProgressBar {
             progress.pop();
         }
         for (int i = 0; i < 10; i++) {
-            progress.push(" ");
+            progress.push("");
         }
     }
 
@@ -54,9 +55,9 @@ public class ProgressBar {
      * @param addVal
      */
     public void addToBar(float addVal) {
-        int meterMax = Human.meterMax;
-        int percentAdd = (int) (addVal / meterMax);
-        int amtAdd = (int) ((addVal / meterMax) - (addVal % meterMax));
+//        int meterMax = Human.meterMax;
+        float percentAdd = (addVal / meterMax) * 100;
+        float amtAdd = percentAdd / 10;
 
         System.out.println(amtAdd);
         for (int i = 0; i < amtAdd; i++) {
@@ -87,9 +88,11 @@ public class ProgressBar {
 //        System.out.println("Progress: [" + PB.toString() + "]");
         ProgressBar testBar = new ProgressBar();
         testBar.fullBar();
+        System.out.println("Full bar: " + testBar.toString());
         testBar.emptyBar();
-        testBar.addToBar(42);
-        System.out.println(testBar.toString());
+        System.out.println("Empty bar: " + testBar.toString());
+        testBar.addToBar(420);
+        System.out.println("Addto bar: " + testBar.toString());
     }
 }
 
