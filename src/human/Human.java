@@ -12,6 +12,7 @@ public class Human {
     public boolean isAlive; // whether the human is alive or not.
     public int thirstLev; // level of thirst/dehydration
     public int hungerLev; // level of hunger/starvation
+    protected int BMI;
 
     // constructor
     public Human() {

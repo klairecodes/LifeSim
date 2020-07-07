@@ -21,10 +21,10 @@ public class ProgressBar {
      */
     @Override
     public String toString() {
-        Iterator progressiter = progress.iterator();
+        Iterator progressIter = progress.iterator();
         String result = "";
-        while (progressiter.hasNext()) {
-            Object item = progressiter.next();
+        while (progressIter.hasNext()) {
+            Object item = progressIter.next();
             result += item;
         }
         return result;
@@ -55,7 +55,6 @@ public class ProgressBar {
      * @param addVal
      */
     public void addToBar(float addVal) {
-//        int meterMax = Human.meterMax;
         float percentAdd = (addVal / meterMax) * 100;
         float amtAdd = percentAdd / 10;
 
@@ -66,17 +65,27 @@ public class ProgressBar {
     }
 
     public void subToBar(float subVal) {
-        int meterMax = Human.meterMax;
-        int percentSub = (int) (subVal / meterMax);
+        float percentSub = (subVal / meterMax) * 100;
+        float amtSub = percentSub / 10;
 
-        progress.pop();
+        System.out.println(amtSub);
+        for (int i = 0; i < amtSub; i++) {
+            progress.pop();
+        }
     }
 
     /**
      * checks whether a progressbar is too large or too small (negatives)
      */
     public void validateBar() {
-        ;
+        int pgBarLen = progress.toString().length();
+
+        if (pgBarLen < 0) {
+            System.out.println("Empty bar.");
+        }
+        else if (pgBarLen > 10) {
+            this.subToBar(pgBarLen - 10);
+        }
     }
 
     public static void main(String[] args) {
@@ -92,6 +101,8 @@ public class ProgressBar {
         testBar.emptyBar();
         System.out.println("Empty bar: " + testBar.toString());
         testBar.addToBar(420);
+        testBar.subToBar(300);
+        testBar.validateBar();
         System.out.println("Addto bar: " + testBar.toString());
     }
 }
