@@ -11,8 +11,7 @@ public class Human {
     public static int meterMax = 1000; // the maximum size of a meter shown to the user
     public boolean isAlive; // whether the human is alive or not.
     public int thirstLev; // level of thirst/dehydration
-    public int hungerLev; // level of hunger/starvation
-    protected int BMI;
+    public int hungerLev; // level of hunger/uu    protected int BMI;
 
     // constructor
     public Human() {

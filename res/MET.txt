@@ -1,8 +1,3 @@
-2011 Compendium of Physical Activities
-CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
-
-*Italicized codes and METs are estimated values
-
 01003 14.0 bicycling bicycling, mountain, uphill, vigorous
 01004 16.0 bicycling bicycling, mountain, competitive, racing
 01008 8.5 bicycling bicycling, BMX
@@ -52,8 +47,6 @@ CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 02068 12.3 conditioning exercise rope skipping, general
 02070 6.0 conditioning exercise rowing, stationary ergometer, general, vigorous effort
 02071 4.8 conditioning exercise rowing, stationary, general, moderate effort
-
-CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 02072 7.0 conditioning exercise rowing, stationary, 100 watts, moderate effort
 02073 8.5 conditioning exercise rowing, stationary, 150 watts, vigorous effort
 02074 12.0 conditioning exercise rowing, stationary, 200 watts, very vigorous effort
@@ -105,8 +98,6 @@ CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 04050 6.0 fishing and hunting fishing in stream, in waders (Taylor Code 670)
 04060 2.0 fishing and hunting fishing, ice, sitting
 04061 1.8 fishing and hunting fishing, jog or line, standing, general
-
-CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 04062 3.5 fishing and hunting fishing, dip net, setting net and retrieving fish, general
 04063 3.8 fishing and hunting fishing, set net, setting net and retrieving fish, general
 04064 3.0 fishing and hunting fishing, fishing wheel, setting net and retrieving fish, general
@@ -158,8 +149,6 @@ CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 05053 2.5 home activities feeding household animals
 05055 2.5 home activities putting away groceries (e.g. carrying groceries, shopping without a grocery cart), carrying packages
 05056 7.5 home activities carrying groceries upstairs
-
-CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 05057 3.0 home activities cooking Indian bread on an outside stove
 05060 2.3 home activities food shopping with or without a grocery cart, standing or walking
 05065 2.3 home activities non-food shopping, with or without a cart, standing or walking
@@ -211,8 +200,6 @@ CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 06030 3.3 home repair automobile repair, light or moderate effort
 06040 3.0 home repair carpentry, general, workshop (Taylor Code 620)
 06050 6.0 home repair carpentry, outside house, installing rain gutters (Taylor Code 640),carpentry, outside house, building a fence
-
-CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 06052 3.8 home repair carpentry, outside house, building a fence
 06060 3.3 home repair carpentry, finishing or refinishing cabinets or furniture
 06070 6.0 home repair carpentry, sawing hardwood
@@ -264,8 +251,6 @@ CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 08009 3.3 lawn and garden carrying, loading or stacking wood, loading/unloading or carrying lumber, light-to-moderate effort
 08010 5.5 lawn and garden carrying, loading or stacking wood, loading/unloading or carrying lumber
 08019 4.5 lawn and garden chopping wood, splitting logs, moderate effort
-
-CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 08020 6.3 lawn and garden chopping wood, splitting logs, vigorous effort
 08025 3.5 lawn and garden clearing light brush, thinning garden, moderate effort
 08030 6.3 lawn and garden clearing brush/land, undergrowth, or ground, hauling branches, wheelbarrow chores, vigorous effort
@@ -317,8 +302,6 @@ CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 08261 4.0 lawn and garden yard work, general, moderate effort
 08262 6.0 lawn and garden yard work, general, vigorous effort
 09000 1.5 miscellaneous board game playing, sitting
-
-CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 09005 2.5 miscellaneous casino gambling, standing
 09010 1.5 miscellaneous card playing, sitting
 09013 1.5 miscellaneous chess game, sitting
@@ -370,8 +353,6 @@ CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 11010 4.0 occupation bakery, general, moderate effort
 11015 2.0 occupation bakery, light effort
 11020 2.3 occupation bookbinding
-
-CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 11030 6.0 occupation building road, driving heavy machinery
 11035 2.0 occupation building road, directing traffic, standing
 11038 2.5 occupation carpentry, general, light effort
@@ -423,8 +404,6 @@ CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 11400 5.8 occupation horse racing, trotting
 11410 3.8 occupation horse racing, walking
 11413 3.0 occupation kitchen maid
-
-CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 11415 4.0 occupation lawn keeper, yard work, general
 11418 3.3 occupation laundry worker
 11420 3.0 occupation locksmith
@@ -458,10 +437,7 @@ CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 11585 1.5 occupation sitting meetings, light effort, general, and/or with talking involved (e.g., eating at a business meeting)
 11590 2.5 occupation sitting tasks, moderate effort (e.g., pushing heavy levers, riding mower/forklift, crane operation)
 11593 2.8 occupation sitting, teaching stretching or yoga, or light effort exercise class
-11600 3.0 occupation standing tasks, light effort (e.g., bartending, store clerk, assembling, filing, duplicating, librarian, putting up a Christmas tree, standing and talking at work,
-
-changing clothes when teaching physical education, standing)
-
+11600 3.0 occupation standing tasks, light effort (e.g., bartending, store clerk, assembling, filing, duplicating, librarian, putting up a Christmas tree, standing and talking at work, changing clothes when teaching physical education, standing)
 11610 3.0 occupation standing, light/moderate effort (e.g., assemble/repair heavy parts, welding,stocking parts,auto repair,standing, packing boxes, nursing patient care)
 11615 4.5 occupation standing, moderate effort, lifting items continuously, 10 – 20 lbs, with limited walking or resting
 11620 3.5 occupation standing, moderate effort, intermittent lifting 50 lbs, hitch/twisting ropes
@@ -474,14 +450,9 @@ changing clothes when teaching physical education, standing)
 11750 2.5 occupation tailoring, machine sewing
 11760 3.5 occupation tailoring, pressing
 11763 2.0 occupation tailoring, weaving, light effort (e.g., finishing operations, washing, dyeing, inspecting cloth, counting yards, paperwork)
-11765 4.0 occupation tailoring, weaving, moderate effort (e.g., spinning and weaving operations, delivering boxes of yam to spinners, loading of warp bean, pinwinding,
-
-conewinding, warping, cloth cutting)
-
+11765 4.0 occupation tailoring, weaving, moderate effort (e.g., spinning and weaving operations, delivering boxes of yam to spinners, loading of warp bean, pinwinding, conewinding, warping, cloth cutting)
 11766 6.5 occupation truck driving, loading and unloading truck, tying down load, standing, walking and carrying heavy loads
-11767 2.0 occupation Truch, driving delivery truck, taxi, shuttlebus, school bus
-
-CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
+11767 2.0 occupation truck, driving delivery truck, taxi, shuttlebus, school bus
 11770 1.3 occupation typing, electric, manual or computer
 11780 6.3 occupation using heavy power tools such as pneumatic tools (e.g., jackhammers, drills)
 11790 8.0 occupation using heavy tools (not power) such as shovel, pick, tunnel bar, spade
@@ -533,8 +504,6 @@ CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 13036 1.5 self care taking medication, sitting or standing
 13040 2.0 self care grooming, washing hands, shaving, brushing teeth, putting on make-up, sitting or standing
 13045 2.5 self care hairstyling, standing
-
-CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 13046 1.3 self care having hair or nails done by someone else, sitting
 13050 2.0 self care showering, toweling off, standing
 14010 2.8 sexual activity active, vigorous effort
@@ -586,8 +555,6 @@ CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 15330 8.0 sports handball, team
 15335 4.0 sports high ropes course, multiple elements
 15340 3.5 sports hang gliding
-
-CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 15350 7.8 sports hockey, field
 15360 8.0 sports hockey, ice, general
 15362 10.0 sports hockey, ice, competitive
@@ -639,8 +606,6 @@ CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 15610 7.0 sports soccer, casual, general (Taylor Code 540)
 15620 5.0 sports softball or baseball, fast or slow pitch, general (Taylor Code 440)
 15625 4.0 sports softball, practice
-
-CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 15630 4.0 sports softball, officiating
 15640 6.0 sports softball,pitching
 15645 3.3 sports sports spectator, very excited, emotional, physically moving
@@ -692,8 +657,6 @@ CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 17060 9.0 walking climbing hills with 42+ lb load
 17070 3.5 walking descending stairs
 17080 6.0 walking hiking, cross country (Taylor Code 040)
-
-CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 17082 5.3 walking hiking or walking at a normal pace through fields and hillsides
 17085 2.5 walking bird watching, slow walk
 17088 4.5 walking marching, moderate speed, military, no pack
@@ -745,8 +708,6 @@ CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 18090 3.0 water activities diving, springboard or platform
 18100 5.0 water activities kayaking, moderate effort
 18110 4.0 water activities paddle boat
-
-CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 18120 3.0 water activities sailing, boat and board sailing, windsurfing, ice sailing, general (Taylor Code 235)
 18130 4.5 water activities sailing, in competition
 18140 3.3 water activities sailing, Sunfish/Laser/Hobby Cat, Keel boats, ocean sailing, yachting, leisure
@@ -798,8 +759,6 @@ CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 19060 7.0 winter activities ski jumping, climb up carrying skis
 19075 7.0 winter activities skiing, general
 19080 6.8 winter activities skiing, cross country, 2.5 mph, slow or light effort, ski walking
-
-CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 19090 9.0 winter activities skiing, cross country, 4.0-4.9 mph, moderate speed and effort, general
 19100 12.5 winter activities skiing, cross country, 5.0-7.9 mph, brisk speed, vigorous effort
 19110 15.0 winter activities skiing, cross country, >8.0 mph, elite skier, racing
@@ -851,8 +810,6 @@ CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 21018 3.5 volunteer activities walk/run play with children, moderate, only active periods
 21019 5.8 volunteer activities walk/run play with children, vigorous, only active periods
 21020 3.0 volunteer activities standing, light/moderate work (e.g., pack boxes, assemble/repair, set up chairs/furniture)
-
-CODE METS MAJOR HEADING SPECIFIC ACTIVITIES
 21025 3.5 volunteer activities standing, moderate (lifting 50 lbs., assembling at fast rate)
 21030 4.5 volunteer activities standing, moderate/heavy work
 21035 1.3 volunteer activities typing, electric, manual, or computer
