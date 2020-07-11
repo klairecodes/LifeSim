@@ -28,8 +28,9 @@ public class LifeSym{
         Human human = new Human(); // creating a new human object
         ProgressBar bar = new ProgressBar(); // creating a new progressbar object
         try {
-            List<Met> metValues = getMetData("res/MET.txt");
-            System.out.println(metValues.get(821));
+//            List<Met> metValues = getMetData("res/MET.txt");
+            List<Met> metValues = getMetData("res/testMET.txt");
+//            System.out.println(metValues.get(821));
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
