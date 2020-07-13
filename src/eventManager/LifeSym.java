@@ -31,6 +31,9 @@ public class LifeSym{
 //            List<Met> metValues = getMetData("res/MET.txt");
             List<Met> metValues = getMetData("res/testMET.txt");
 //            System.out.println(metValues.get(821));
+            for (Met metItem : metValues) {
+                System.out.println(metItem);
+            }
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();

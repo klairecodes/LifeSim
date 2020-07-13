@@ -2,8 +2,8 @@ package eventManager;
 
 
 import java.lang.Double;
-import java.util.Arrays;
-import java.util.regex.Pattern;
+
+import static java.lang.Character.isDigit;
 
 public class Met {
     private final String[] categoryOptions = {"bicycling", "conditioning exercise", "dancing", "fishing and hunting", "home activities", "home repair", "inactivity", "lawn and garden", "miscellaneous", "music playing", "occupation", "running", "self care", "sexual activity", "sports", "transportation", "walking", "water activities", "winter activities", "religious activities", "volunteer activities"};
@@ -25,7 +25,7 @@ public class Met {
         parseSpaceItems(fileLine);
 
         // debug
-        System.out.println("#########################");
+//        System.out.println("#########################");
 //        System.out.println(fileLine);
 //        System.out.print("ID: ");
 //        System.out.println(id);
@@ -37,7 +37,8 @@ public class Met {
 
     /**
      * Gets the individual list of activities that are under a MET value // if list has one element, split it and just
-     * take the last item
+     * take the last item. Lots of manipulations
+     * TODO: try to do this in less steps
      * @param metLine the entire line of the data file 
      */
     public void parseSpaceItems(String metLine) {
@@ -55,26 +56,58 @@ public class Met {
                 break;
             }
         }
+        StringBuilder cleanLine = edgeCaseHandler(lineSB);
 
-        StringBuilder cutLine = removeValueStrings(lineSB);
+        int removeIndex = findNumEnd(cleanLine);
+        cleanLine.delete(0, removeIndex);
+        System.out.println(cleanLine);
 
-        // The list separated by commas in order to get values that include spaces
-        String[] commaList = metLine.split(", ");
-        // Getting the correct category
-        String[] categoryArray = commaList[0].split(" "); // splitting the first item for category extraction
+        // Rebuilding the line to now be split by commas
+        this.activities = cleanLine.toString().split(" ,");
 
-        // Getting the array of activities described
-        String[] activityArray = new String[commaList.length];
-        String firstActivity = commaList[0].split(" ")[3]; // getting the last item in first entry
-        activityArray[0] = firstActivity;
 
-        for (int i = 1; i < commaList.length; i++) {
-            if (commaList[i] != null) {
-                activityArray[i] = commaList[i];
+//        activities = activityArray;
+    }
+
+    /**
+     * Finds where the number values end in an input line
+     * @param cleanLine the line worked on
+     * @return index of the first non number, or non space, or non period
+     */
+    private int findNumEnd(StringBuilder cleanLine) {
+        int deleteIdx = 0;
+        String cleanString = cleanLine.toString();
+        for (int i = 0; i < cleanString.length(); i++) {
+            Character c = cleanString.charAt(i);
+            if (c == '.' || c == ' ') {
+            } else if (Character.isDigit(c)) {
+            } else {
+                deleteIdx = i;
+                break;
             }
         }
+        return deleteIdx;
+    }
 
-        activities = activityArray;
+    /**
+    Attempts to remove edge cases: "(e.g., ... )" from dataset and restores ideal formatting
+     @param lineSB the stringbuilder of the line of the file being worked on
+     **/
+    private StringBuilder edgeCaseHandler(StringBuilder lineSB) {
+        // TODO: Make an array of edge cases to loop through, do it more than once per line if it happened once, and get the formatting correct
+        String[] edgeCases = {"(e.g.,", ")"};
+        for (int i = 0; i < 3; i++) {
+            int edgeIdx = lineSB.indexOf(edgeCases[0]);
+            if (edgeIdx != -1) {
+                lineSB.delete(edgeIdx, edgeIdx + 7);
+                lineSB.replace(edgeIdx - 1, edgeIdx, ", ");
+            }
+            int edgeParenIdx = lineSB.indexOf(edgeCases[1]);
+            if (edgeParenIdx != -1) {
+                lineSB.delete(edgeParenIdx, edgeParenIdx+1);
+            }
+        }
+        return lineSB;
     }
 
     /**
@@ -94,7 +127,6 @@ public class Met {
                 newLine.append(lineArray[i]);
             }
         }
-        System.out.println(newLine);
         return builtLine;
 
     }
@@ -117,6 +149,13 @@ public class Met {
 
     @Override
     public String toString() {
-        return String.format("ID: %d MET: %.1f Category: %s", id, met, category);
+        StringBuilder sb = new StringBuilder();
+        for (String activity : activities) {
+            sb.append(activity);
+            sb.append(", ");
+        }
+        sb.deleteCharAt(sb.length()-1);
+        sb.deleteCharAt(sb.length()-1);
+        return String.format("ID: %d MET: %.1f Category: %s Activities: %s", id, met, category, sb.toString());
     }
 }
