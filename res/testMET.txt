@@ -1,0 +1,7 @@
+01003 14.0 bicycling bicycling, mountain, uphill, vigorous
+01010 4.0 bicycling bicycling, <10 mph, leisure, to work or for pleasure (Taylor Code 115)
+01070 5.0 bicycling unicycling
+02003 3.8 conditioning exercise activity promoting video game (e.g., Wii Fit), moderate effort (e.g., aerobic, resistance)
+04005 4.5 fishing and hunting fishing, crab fishing
+19260 2.5 winter activities snow blower, walking and pushing
+21070 3.0 volunteer activities walk/stand combination, for volunteer purposes
